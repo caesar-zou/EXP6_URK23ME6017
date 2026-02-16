@@ -1,0 +1,43 @@
+// Both classes belong to this single package now
+
+package studentpack; 
+
+
+
+class Student { // Removed 'public' so it can stay in this file
+
+    private String name;
+
+    private int regNo;
+
+
+
+    public void setName(String n) { name = n; }
+
+    public void setRegNo(int r) { regNo = r; }
+
+    public String getName() { return name; }
+
+    public int getRegNo() { return regNo; }
+
+}
+
+
+
+public class PackageEncapsulationDemo {
+
+    public static void main(String[] args) {
+
+        Student s = new Student();
+
+        s.setName("Abishek");
+
+        s.setRegNo(101);
+
+        System.out.println("Student Name: " + s.getName());
+
+        System.out.println("Register Number: " + s.getRegNo());
+
+    }
+
+}
